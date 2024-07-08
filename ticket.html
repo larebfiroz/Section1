@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie ticket booking</title>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>book the ticket now</legend>
+            <label for="">name</label>
+            <input type="text">
+            <br><br>
+            <label for="">phone no</label>
+            <input type="number" minlength="10">
+            <br><br>
+            <label for="">select movie</label>
+            <input type="text" list=" select movie">
+            <datalist id=" select movie">
+                <option> dabang</option>
+                <option>3 idiot</option>
+                <option> commando</option>
+                <option> surya sardar</option>
+
+            </datalist>
+            <br><br>
+            <label for="">select seat</label>
+            <input type="text" list=" select seat">
+            <datalist id=" select seat">
+                <option> silver</option>
+                <option>platinum</option>
+                <option> gold</option>
+                <option> gold aboandance</option>
+                <option> diamond</option>
+            </datalist>
+            <br><br>
+            <label for="">select food</label>
+            <input type="text" list=" select food">
+            <datalist id=" select food">
+                <option> snacks</option>
+                <option>starter</option>
+                <option> heavy food</option>
+                <option>leight food</option>
+            </datalist>
+            <br><br>
+            <label for="date">select date</label>
+            <input type="date" id="date">
+            <br><br>
+            <label for="you will pay">you will pay</label>
+            <select id="you will pay">
+                <option>price</option>
+                <option>silver - 250</option>
+                <option>platinum - 550</option>
+                <option>gold - 1500</option>
+                <option>gold aboadance - 1550</option>
+                <option>diamond - 2500</option>
+            </select>
+            <br><br>
+            <button type="reset">reset</button>
+            <button type="submit">book now</button>
+            <br><br>
+            <details>
+                <summary>terms and condition apply</summary>
+                <p>Some customers refuse to purchase event tickets unless they are provided with some <mark>sort of
+                        guarantee or warranty</mark>. If your business offers any such reassurance, explain the details
+                    of the guarantee or warranty in the terms and conditions.
+
+                </p>
+            </details>
+            <br><br>
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>
