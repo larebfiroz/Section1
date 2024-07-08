@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">student name</label>
+        <input type="text" id="name" required minlength="5">
+        <br><br>
+        <label for="email">email address</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="">gender</label>
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br><br>
+        <label for="dob"> date of birth</label>
+        <input type="date" id="dob">
+        <br><br>
+        <label for="course">course</label>
+        <select id="course">
+            <option value=""> select courses</option>
+            <option>mern stack development</option>
+            <option>data analyst</option>
+            <option>react native</option>
+            <option>ai</option>
+            <option>django</option>
+        </select>
+        <br><br>
+        <label for="">collage</label>
+        <input type="text" list="collage- option" required>
+        <datalist id="collage- option">
+            <option>bbd</option>
+            <option>integral university</option>
+            <option>amity</option>
+            <option>rr</option>
+            <option>goel</option>
+        </datalist>
+
+        <br><br>
+        <input type="checkbox" id="terms">
+        <label for="terms">accept term and condition</label>
+        <br><br>
+        <details>
+            <summary>see the term and condition</summary>
+            <p>
+                this form is use to store the data of the <mark>collage student</mark>
+            </p>
+        </details>
+        <br><br>
+        
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
