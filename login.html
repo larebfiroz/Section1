@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <style>
-        .card{
+        * {
+            font-family: montserrat;
+        }
+
+        .card {
             border: 2px solid red;
             width: 20%;
             box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.479);
-border-radius: 20px;
-padding: 30px;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: white;
+
 
         }
-        body{
+        .btn:hover{
+            background-color:black;
+        }
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100VH;
+            background-color: crimson;
+            background-size: cover;
+            background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.497), rgba(0, 0, 0, 0.525)),
+                url('https://m.media-amazon.com/images/I/71+17bVYHxL._AC_UF1000,1000_QL80_.jpg')
+        }
+
+        .form-title {
+            text-align: center;
+            font-family: montserrat;
+
+        }
+
+        .text-input,
+        .btn {
+            display: block;
+
+            width: 100%;
+        }
+
+        .text-input {
+            margin-bottom: 10px;
+
+            box-sizing: border-box;
+            padding: 5px 10px;
+        }
+
+        .btn {
+            margin: 20px 0;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition-duration: 0.4s;
+        }
+
+        .register-link {
+            text-align: center;
+        }
+
+        .form-link {
+            text-decoration: none;
+            font-weight: bold;
+            color: brown;
+            display: block;
         }
     </style>
 </head>
+
 <body>
-    
+
     <div class="card">
         <h3 class="form-title">Login here </h3>
-        <form >
+        <form>
             <label for="">email address</label>
-            <input class="text-input" type="email"  id="email">
+            <input class="text-input" type="email" id="email">
+
 
             <label for="">password</label>
-            <input class="text-input" type="password"  id="password">
+            <input class="text-input" type="password" id="password">
+
+            <a href="#" class=form-link>forget password</a>
 
             <button class="btn">submit</button>
 
+            <a href="#" class="form-link register-link">create new account</a>
 
 
         </form>
 
     </div>
 </body>
+
 </html>
