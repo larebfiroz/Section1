@@ -4,6 +4,7 @@ for(let i=0;i<10;i++){
 }
 
 // wap to print all number divisble by 7 range 50 to 100
+
 for(i=50;i<100;i++){
     if(i%7===0)
     {

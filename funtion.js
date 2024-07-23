@@ -34,4 +34,26 @@ const sumofrange = (range1,range2) => {
 }
 console.log(sumofrange(8,10));
 
+// . WAP to print all prime numbers in a range.
 
+
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function printPrimesInRange(start, end) {
+    for (let num = start; num <= end; num++) {
+        if (isPrime(num)) {
+            console.log(num);
+        }
+    }
+}
+
+// 2. WAP to print all perfect squares in a range.
+// 3. WAP to print all Fibonacci numbers below 100.
+// 4. WAP to check if a number is palindrome.
+// 5. WAP to check if a number is armstrong.

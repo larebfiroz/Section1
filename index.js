@@ -8,3 +8,5 @@ console.log( typeof num);
 
 console.log(1 ==='1');
 console.log(1 =='1');
+
+const x=1
