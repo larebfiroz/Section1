@@ -56,4 +56,16 @@ function printPrimesInRange(start, end) {
 // 2. WAP to print all perfect squares in a range.
 // 3. WAP to print all Fibonacci numbers below 100.
 // 4. WAP to check if a number is palindrome.
-// 5. WAP to check if a number is armstrong.
+// (5. WAP to check if a number is armstrong.
+for(n1=50;n1<=100;n++)
+const n1 = 17;
+let prime = true;
+for(let i= 2;i<n1;i++){
+    if(n1%i === 0){
+        console.log('not prime');
+        prime=false;
+        break;
+
+    }
+}
+if (prime) console.log('prime');
